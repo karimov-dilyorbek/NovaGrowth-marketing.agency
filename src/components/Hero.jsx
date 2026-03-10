@@ -1,10 +1,7 @@
-import React from "react";
-
 export default function Hero() {
   return (
     <section className="bg-[#f5f5f3]">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-14 px-5 pb-16 pt-8 sm:px-8 md:pt-12 lg:grid-cols-2 lg:px-10 lg:pb-24 lg:pt-16">
-        {/* Left Content */}
         <div className="max-w-2xl">
           <h1 className="text-2xl font-extrabold leading-[1.05] tracking-tight sm:text-[3.2rem] md:text-[4rem] lg:text-[4.7rem]">
             Brighten Your
@@ -13,7 +10,7 @@ export default function Hero() {
               <span className="absolute left-0 top-1/2  z-0 h-[75%] w-full -translate-y-1/2 -rotate-2 bg-[#f5cd00]"></span>
             </span>
             <br />
-            with Sunstream Digital
+            with NovaGrowth
             <span className="text-[#f5cd00]">.</span>
           </h1>
 
@@ -33,26 +30,22 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Images */}
         <div className="relative mx-auto flex w-full max-w-140 items-center justify-center lg:justify-end">
           <div className="relative h-105 w-full sm:h-125 md:h-140">
-            {/* Top large image */}
             <img
-              src="/hero-st-img.png"
+              src="/hero-st-img.svg"
               alt="Team working"
               className="absolute right-0 top-0 h-55 w-[72%] object-cover shadow-lg sm:h-67.5 md:h-75"
             />
 
-            {/* Bottom left image */}
             <img
-              src="/hero-nd-img.png"
+              src="/hero-nd-img.svg"
               alt="Creative team"
               className="absolute left-0 top-36.25 h-45 w-[45%] object-cover shadow-md sm:top-46.25 sm:h-55 md:top-52.5 md:h-60"
             />
 
-            {/* Bottom right image */}
             <img
-              src="/hero-rd-img.png"
+              src="/hero-rd-img.svg"
               alt="Planning session"
               className="absolute right-4 top-53 z-50 h-55 w-[42%] object-cover shadow-md sm:top-62 sm:h-50 md:top-68"
             />

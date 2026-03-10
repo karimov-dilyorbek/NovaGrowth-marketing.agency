@@ -70,7 +70,7 @@ export default function Header() {
 
       {/* Right Drawer Menu */}
       <div
-        className={`fixed right-0 top-0 z-50 h-screen w-[280px] bg-white shadow-2xl transition-transform duration-300 ease-in-out sm:w-[320px] lg:hidden ${
+        className={`fixed right-0 top-0 z-50 h-screen w-70 bg-white shadow-2xl transition-transform duration-300 ease-in-out sm:w-[320px] lg:hidden ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}>
         {/* Drawer Header */}
