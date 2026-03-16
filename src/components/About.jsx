@@ -16,10 +16,8 @@ export default function About() {
 
   return (
     <section className="w-full">
-      {/* Top About Section */}
       <div className="bg-[#f3f2eb]">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-5 py-16 sm:px-8 md:py-20 lg:grid-cols-2 lg:gap-16 lg:px-10 lg:py-24">
-          {/* Left Content */}
           <div className="max-w-2xl">
             <span className="mb-3 inline-block text-xs font-bold uppercase tracking-wider text-[#25364a]">
               About Us

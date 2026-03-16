@@ -20,14 +20,12 @@ export default function Header() {
   return (
     <header className="relative w-full bg-[#f5f5f3]">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8 lg:px-10">
-        {/* Logo */}
         <div className="flex items-center gap-3 max-[630px]:w-48">
           <a href="././index.html">
             <img src="/logo.svg" alt="Logo" className="h-auto w-44 sm:w-48 md:w-64" />
           </a>
         </div>
 
-        {/* Desktop Nav */}
         <div className="flex items-center gap-12">
           <nav className="hidden items-center gap-8 lg:flex">
             {navLinks.map((item) => (
@@ -45,7 +43,6 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(true)}
           className="flex h-11 w-11 items-center justify-center rounded-md border border-gray-300 lg:hidden">
@@ -60,7 +57,6 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Overlay */}
       <div
         onClick={() => setMenuOpen(false)}
         className={`fixed inset-0 z-40 bg-black/25 backdrop-blur-[2px] transition-all duration-300 lg:hidden ${
@@ -68,12 +64,10 @@ export default function Header() {
         }`}
       />
 
-      {/* Right Drawer Menu */}
       <div
         className={`fixed right-0 top-0 z-50 h-screen w-70 bg-white shadow-2xl transition-transform duration-300 ease-in-out sm:w-[320px] lg:hidden ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}>
-        {/* Drawer Header */}
         <div className="flex items-center justify-between border-b border-gray-200 px-5 py-5">
           <h3 className="text-lg font-bold text-[#2d3a4b]">Menu</h3>
 
@@ -91,7 +85,6 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Drawer Nav */}
         <nav className="flex flex-col gap-5 px-5 py-6">
           {navLinks.map((item) => (
             <a

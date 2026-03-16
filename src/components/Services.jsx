@@ -32,7 +32,6 @@ export default function Services() {
     <section className="bg-[#f3f2eb]">
       <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-16">
-          {/* LEFT SIDE */}
           <div>
             <span className="mb-3 inline-block text-[11px] font-extrabold uppercase tracking-wide text-[#223548]">
               Illuminate
@@ -57,7 +56,6 @@ export default function Services() {
                 />
               </div>
 
-              {/* Middle Two Images */}
               <div className="grid gap-4">
                 <div className="overflow-hidden">
                   <img
@@ -76,7 +74,6 @@ export default function Services() {
                 </div>
               </div>
 
-              {/* Right Image with Yellow Background */}
               <div className="relative">
                 <div className="absolute inset-0 translate-x-4 translate-y-3 rotate-6 bg-[#f5cd00]" />
                 <div className="relative overflow-hidden">
@@ -90,14 +87,11 @@ export default function Services() {
             </div>
           </div>
 
-          {/* RIGHT SIDE */}
           <div className="flex flex-col justify-center gap-8 lg:pl-6">
             {services.map((service, index) => (
               <div key={index} className="flex items-start gap-4">
-                {/* Icon */}
                 <img src={service.icon} alt={service.title} className="mt-1 h-11 w-11 shrink-0 object-contain" />
 
-                {/* Text */}
                 <div>
                   <h3 className="text-[1.45rem] font-medium leading-snug text-black sm:text-[1.7rem]">
                     {service.title}
